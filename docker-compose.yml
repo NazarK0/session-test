@@ -1,0 +1,17 @@
+services:
+  session:
+    build: .
+    container_name: session
+    ports:
+      - "8080:80"
+    depends_on:
+      - chromadb
+    environment:
+      - CHROMA_HOST=chromadb
+      - CHROMA_PORT=8000
+    restart: always
+  chromadb:
+    image: "chromadb/chroma"
+    container_name: chromadb
+    ports:
+      - "8000:8000"

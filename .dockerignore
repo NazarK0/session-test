@@ -1,0 +1,4 @@
+Makefile
+.gitignore
+.venv
+__pycache__/

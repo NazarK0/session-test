@@ -6,4 +6,4 @@
 * in prod mode
 ```make prod``` or ```docker compose up```
 * API documentation
-```http://localhost:8080/docs``` (dev) or ```http://localhost:8080/docs``` (prod)
+```http://localhost:8000/docs``` (dev) or ```http://localhost:8080/docs``` (prod)

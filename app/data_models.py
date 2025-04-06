@@ -3,11 +3,11 @@ from pydantic import BaseModel, UUID4
 
 
 class DocumentMetadata(BaseModel):
-    created_at: datetime
     name: str
-    readers: list[str]
-    data_source: list[str]
     number: str | None = None
+    readers: list[str]
+    created_at: datetime
+    datasource: list[str]
     attachment_name: str | None = None
 
 
